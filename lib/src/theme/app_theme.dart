@@ -23,6 +23,7 @@ final class AppTheme {
         color: blue,
         fontWeight: FontWeight.w600,
       ),
+      border: _defaultInputBorder,
       enabledBorder: _defaultInputBorder,
       focusedBorder: _defaultInputBorder,
       errorBorder: _defaultInputBorder.copyWith(
@@ -40,6 +41,21 @@ final class AppTheme {
             fontFamily: 'Montserrat',
             fontSize: 14,
             fontWeight: FontWeight.w700),
+      ),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        backgroundColor: Colors.white,
+        side: const BorderSide(color: blue),
+        foregroundColor: blue,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+        textStyle: const TextStyle(
+          fontFamily: 'Montserrat',
+          fontSize: 14,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     ),
   );
